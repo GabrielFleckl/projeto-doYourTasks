@@ -6,7 +6,7 @@
 
 body {
   font-family: "inter", sans-serif;
-  max-height: 100vh;
+  min-height: 100vh;
   padding: 0px 33.7px;
   background-color: #F9F4F4;
 }
@@ -53,7 +53,8 @@ main {
 .container-list {
   width: 70%;
   min-width: 300px;
-  height: 500px;
+  min-height: 60%;
+  height: 600px;
   list-style-type: none;
   overflow: scroll;
   overflow-x: hidden;
