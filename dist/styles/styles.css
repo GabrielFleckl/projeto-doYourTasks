@@ -36,6 +36,7 @@ main {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  margin-top: 18px;
 }
 .container-add__button .container-add__text {
   color: #B47AEA;
@@ -53,7 +54,7 @@ main {
 .container-list {
   width: 70%;
   min-width: 300px;
-  min-height: 60%;
+  min-height: 50%;
   height: 600px;
   list-style-type: none;
   overflow: scroll;
