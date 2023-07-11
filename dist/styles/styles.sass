@@ -1,0 +1,211 @@
+// Variables 
+$violet: #B47AEA
+$gray: #5E5E5E
+$black: #13131A
+$white: #F9F4F4
+$blue: #1E9CEA
+$fade: #5e5e5e60
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+body
+  font-family: 'inter', sans-serif
+  max-height: 100vh
+  padding: 0px 33.7px
+  background-color: $white
+
+.header
+  text-align: center
+  padding: 32px
+  margin: auto
+  .header__title
+    color: $fade
+    font-size: 3rem
+    font-weight: 700
+  span
+    color: $violet
+
+main
+  margin: auto
+  height: 600px
+
+.container-add__button
+  display: flex
+  gap: 13px
+  justify-content: center
+  align-items: center
+  cursor: pointer
+  .container-add__text
+    color: $violet
+    font-weight: 700
+    font-size: 1.5rem
+    &:hover
+      opacity: .9
+      text-decoration: underline
+  .container-add__icon
+    &:hover
+      opacity: .9
+
+.container-list
+  width: 70%
+  min-width: 300px
+  height: 500px
+  list-style-type: none
+  overflow: scroll
+  overflow-x: hidden
+  border-radius: 8px
+  padding: 16px 35px
+  margin: auto
+  word-break: break-all
+  border-bottom: 2px solid $violet
+  .container-list__text
+    font-size: 1.4rem
+    font-family: 'inter', sans-serif
+    font-weight: 400
+    color: $black
+  .container-list__item
+    padding: 16px 16px 16px 0px
+    display: flex
+    justify-content: start
+    align-items: center
+    flex: 1 1 800px
+    width: 100%
+    gap: 12px
+  .container-list__icon
+    cursor: pointer
+  .container-list__checkbox
+    display: flex
+    gap: 8px
+    align-items: center
+    input[type="checkbox"]
+      appearance: none
+      border: 2px solid $violet
+      min-width: 20px
+      min-height: 20px
+      border-radius: 5px
+      cursor: pointer
+      &:checked
+        background-color: $violet
+
+::-webkit-scrollbar
+  background-color: $white
+  color: $violet
+  width: 0px
+  border-radius: 8px
+::-webkit-scrollbar-thumb
+  background: $violet
+  border-radius: 8px
+  &:hover
+    opacity: .9
+::-webkit-scrollbar-track
+  box-shadow: inset 0 0 5px $violet
+  border-radius: 8px
+
+.container-modal__fade, .container-modal__modal
+  transition: 0.3s
+  opacity: 1
+  pointer-events: all
+
+.container-modal
+
+  .container-modal__fade
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: $fade
+    z-index: 5
+
+  .container-modal__modal
+    display: flex
+    flex-direction: column
+    gap: 32px
+    width: 450px
+    background-color: #fff
+    padding: 32px
+    border-radius: 8px
+    position: fixed
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    z-index: 10
+    max-width: 90%
+
+    .modal__title
+      font-size: 1.4em
+      font-weight: 500
+      color: $violet
+      border-bottom: 1px solid $fade
+      padding-bottom: 10px
+
+    input
+      appearance: none
+      height: 46px
+      border-radius: 12px
+      outline: none
+      border: 2px solid $fade
+      padding: 16px
+      opacity: .9
+      transition: all .2s ease-in-out
+      word-break: break-all
+      font-size: 1.2rem
+      &:focus
+        border: 2px solid $violet
+
+    .modal__buttons
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 100%
+      transition: all .2s ease-in-out
+      .modal__btn-cancel
+        appearance: none
+        border: none
+        color: $white
+        width: 50%
+        height: 46px
+        border-radius: 8px 0px 0px 8px
+        font-family: 'inter', sans-serif
+        font-size: 1.2rem
+        font-weight: 400
+        cursor: pointer
+        background-color: $gray
+        transition: all .2s ease-in-out
+        &:hover
+          opacity: .9
+          transition: all .2s ease-in-out
+      .modal__btn-save
+        appearance: none
+        border: none
+        color: $white
+        background-color: $violet
+        width: 50%
+        height: 46px
+        border-radius: 0px 8px 8px 0px
+        font-family: 'inter', sans-serif
+        font-size: 1.2rem
+        font-weight: 400
+        cursor: pointer
+        transition: all .2s ease-in-out
+        &:hover
+          opacity: .9
+          transition: all .2s ease-in-out
+
+.hide
+  opacity: 0
+  pointer-events: none
+  
+
+.line
+  text-decoration: line-through
+  text-decoration-color: $violet
+  border-bottom: 2px solid $violet
+
+.container-modal__modal.hide
+  top: 350px
+
+
