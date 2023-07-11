@@ -21,7 +21,7 @@
 
 Aqui você pode conferir o layout do projeto. <br>
 
-[👉 Link para visualizar a pagina completa]()
+[👉 Link para visualizar a pagina completa](https://gabrielfleckl.github.io/projeto-doYourTasks/dist/index.html)
 
 
 <br>
