@@ -48,7 +48,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Web aplicativo 
+Web aplicativo criado com as tecnologias <strong> HTML, CSS, SASS, JavaScript  e Typescript</strong>. Isso garantindo uma experiência de usuário suave e interativa, com uma interface minimalista e <strong>responsiva</strong>, que se adapta a todos os dispositivos, <strong>desde desktops até smartphones</strong>.
 
 ## 📝 Licença
 
