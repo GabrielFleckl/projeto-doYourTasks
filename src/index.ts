@@ -76,3 +76,7 @@ function removeItem(event: MouseEvent) {
 
 
 
+function changeColor(){
+  
+}
+

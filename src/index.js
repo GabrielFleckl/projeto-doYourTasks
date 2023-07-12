@@ -54,3 +54,5 @@ function removeItem(event) {
     var item = event.target.parentNode;
     item === null || item === void 0 ? void 0 : item.remove();
 }
+function changeColor() {
+}
